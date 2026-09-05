@@ -1,8 +1,16 @@
 aid: 4r
-name: 4R
-description: '4R is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: 4R Systems
+description: '4R (4R Systems, Inc.) is a Berwyn, Pennsylvania software company founded
+  in 1999 that sells a cloud-based intelligent inventory optimization platform and
+  planning service to retail chains. Its prescriptive-analytics products cover demand
+  planning, replenishment planning, allocation planning, assortment optimization,
+  markdown optimization and vendor order optimization, combining statistical and
+  machine-learning forecasting with a managed "planning as a service" team. Customers
+  reach the platform through a hosted web portal and scheduled data exchanges rather
+  than a public developer API; 4R publishes no developer portal, documentation or
+  machine-readable API contract on its public site.'
 url: https://raw.githubusercontent.com/api-evangelist/4r/refs/heads/main/apis.yml
+image: https://4rsystems.com/wp-content/uploads/2021/11/cropped-4R-logo.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -10,8 +18,16 @@ x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
+position: Producing
 tags:
 - Company
+- Retail
+- Supply Chain
+- Inventory Optimization
+- Demand Planning
+- Analytics
+- Artificial Intelligence
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,54 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://4rsystems.com/
+- type: About
+  url: https://4rsystems.com/company/
+- type: Blog
+  url: https://4rsystems.com/blog/
+- type: BlogRSS
+  url: https://4rsystems.com/feed/
+- type: Newsroom
+  url: https://4rsystems.com/4r-news/
+- type: Support
+  url: https://4rsystems.com/contact-4r/
+- type: PrivacyPolicy
+  url: https://4rsystems.com/4r-privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/4r-systems
+- type: Twitter
+  url: https://twitter.com/4RSystems
+- type: YouTube
+  url: https://www.youtube.com/channel/UCKqhLIeu0tSVow0C0yr7dbA
+- type: Login
+  url: https://portal.4rsystems.com/
+- type: Plans
+  url: plans/4r-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/4r-llms.txt
+- type: DomainSecurity
+  url: security/4r-domain-security.yml
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    4R Systems sells a hosted retail inventory optimization platform whose only public
+    surfaces are a WordPress marketing site and a Microsoft-identity customer portal at
+    portal.4rsystems.com — the site never uses the word API, integration is described
+    only as "data exchanges and web portal access", and every spec and /.well-known/
+    path probed on all four hosts returned 404.
+  evidence:
+  - url: https://4rsystems.com/openapi.json
+    status: 404
+  - url: https://4rsystems.com/.well-known/api-catalog
+    status: 404
+  - url: https://portal.4rsystems.com/swagger/v1/swagger.json
+    status: 404
+  - url: https://4rsystems.com/
+    status: 200
+  checked: '2026-09-05'

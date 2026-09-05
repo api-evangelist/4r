@@ -1,0 +1,67 @@
+# 4R (4R Systems, Inc.)
+
+> 4R Systems, Inc. is a Berwyn, Pennsylvania software company founded in 1999 that sells a
+> cloud-based intelligent inventory optimization platform and planning service to retail
+> chains. Customers reach the platform through a hosted web portal and scheduled data
+> exchanges. As of 2026-09-05 4R publishes no public API, developer portal, SDK, webhook
+> catalog or machine-readable contract of any kind.
+
+## Provenance
+
+- Generated: 2026-09-05
+- Method: generated (no /llms.txt is served by the provider; https://4rsystems.com/llms.txt returned 404)
+- Source: https://4rsystems.com/ and this repository's apis.yml
+- Publisher of this file: API Evangelist (https://apievangelist.com) — this is a third-party
+  profile, not a document served by 4R Systems.
+
+## What 4R sells
+
+- Demand Planning — https://4rsystems.com/predictive-demand-planning/
+- Replenishment Planning — https://4rsystems.com/replenishment-planning/
+- Allocation Planning — https://4rsystems.com/allocation-planning/
+- Assortment Optimization — https://4rsystems.com/assortment-optimization/
+- Markdown Optimization — https://4rsystems.com/markdown-optimization/
+- Vendor Order Optimization — https://4rsystems.com/vendor-order-optimization/
+- Planning as a Service — https://4rsystems.com/paas/
+
+Markets served: auto parts retailing, convenience retailing, fashion apparel and footwear,
+hardware/lumber/paint, home furnishings and furniture.
+
+## Company
+
+- Website: https://4rsystems.com/
+- About: https://4rsystems.com/company/
+- Partners: https://4rsystems.com/partners/
+- News: https://4rsystems.com/4r-news/
+- Blog ("4R Insights"): https://4rsystems.com/blog/ (RSS: https://4rsystems.com/feed/)
+- Resource center: https://4rsystems.com/resource-center/
+- Contact: https://4rsystems.com/contact-4r/ (optimize@4rsystems.com)
+- Customer portal (gated, Microsoft identity sign-in): https://portal.4rsystems.com/
+- Privacy policy: https://4rsystems.com/4r-privacy-policy/
+- LinkedIn: https://www.linkedin.com/company/4r-systems
+- Headquarters: Berwyn / Southeastern, Pennsylvania, United States
+- Founded: 1999
+
+## API surface
+
+None found. The following were probed on 4rsystems.com, www.4rsystems.com,
+portal.4rsystems.com and login.4rsystems.com on 2026-09-05 and all returned 404:
+/openapi.json, /openapi.yaml, /swagger.json, /swagger/v1/swagger.json, /api-docs,
+/apis.json, /llms.txt, /.well-known/security.txt, /.well-known/openid-configuration,
+/.well-known/oauth-authorization-server, /.well-known/api-catalog,
+/.well-known/ai-plugin.json, /.well-known/agent-card.json, /.well-known/agent.json.
+There is no GitHub organization (api.github.com/orgs/4rsystems returned 404) and no
+first-party package on npm or PyPI. The only machine-readable endpoint the marketing
+site exposes is the stock WordPress REST API at https://4rsystems.com/wp-json/, which
+describes the website CMS and is not a 4R product API; it is deliberately not
+registered as one in this profile.
+
+Integration with 4R is documented publicly only as "data exchanges and web portal
+access" — file/feed based, arranged during implementation, with implementation and
+integration partners listed at https://4rsystems.com/partners/.
+
+## For agents
+
+There is nothing here an agent can call. Do not infer an endpoint, base URL, key
+prefix or tool from this file. If 4R publishes a developer program, ask API Evangelist
+for a re-score at https://github.com/api-evangelist/4r/issues.

@@ -64,5 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-4R is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+4R Systems, Inc. is a Berwyn, Pennsylvania software company founded in 1999 that sells a cloud-based
+intelligent inventory optimization platform and planning service to retail chains — demand planning,
+replenishment planning, allocation planning, assortment optimization, markdown optimization, vendor
+order optimization and a managed "planning as a service" team. Customers reach the platform through a
+hosted web portal and scheduled data exchanges.
+
+**No public API surface.** As of 2026-09-05, 4R Systems publishes no developer portal, API reference,
+SDK, webhook catalog or machine-readable contract. Every conventional spec and `/.well-known/` path was
+probed on `4rsystems.com`, `www.4rsystems.com`, `portal.4rsystems.com` and `login.4rsystems.com` and
+returned 404 — see `well-known/4r-well-known.yml` for the recorded probe and `apis.yml` `x-coverage`
+for the finding.
+
+- Website: https://4rsystems.com/
+- Customer portal (gated): https://portal.4rsystems.com/
+- Secondary-market listing this profile was harvested from: https://www.nasdaqprivatemarket.com/company/4r/

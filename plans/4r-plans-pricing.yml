@@ -1,0 +1,28 @@
+generated: '2026-09-05'
+method: searched
+source: https://4rsystems.com/demo-request/
+name: 4R plans and pricing
+description: >-
+  4R Systems publishes no pricing, plan tiers, quotas or rate cards on its public
+  website. The entire commercial motion is a "Request A Demo" form and a direct
+  contact address (optimize@4rsystems.com); pricing for the Intelligent Inventory
+  Optimization platform and the Planning-as-a-Service engagement is quoted per
+  retail chain. There is no self-serve sign-up and no public developer API, so there
+  is no metered API plan to record.
+pricing_page: null
+plan_count: 0
+plans: []
+model: enterprise-quote
+self_serve: false
+free_tier: false
+trial: false
+evidence:
+- url: https://4rsystems.com/
+  status: 200
+  note: Site navigation carries no pricing entry; the only conversion path is "4R DEMO".
+- url: https://4rsystems.com/pricing/
+  status: 404
+  note: No pricing page exists at the conventional path.
+- url: https://4rsystems.com/demo-request/
+  status: 200
+  note: Request-a-demo form is the published route to a quote.

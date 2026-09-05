@@ -1,0 +1,120 @@
+generated: '2026-09-05'
+method: probed
+source: https://4rsystems.com/
+name: 4R well-known discovery probe
+description: >-
+  Named-path probe of the RFC 8615 /.well-known/ surface plus llms.txt on every host
+  this record knows for 4R Systems, Inc. — the registrable domain, its www alias, the
+  hosted customer portal (portal.4rsystems.com) and the identity host
+  (login.4rsystems.com). There are no apis[] entries and no OpenAPI servers[] blocks
+  in this repo, so there are no further hosts to probe. Every path returned 404; no
+  document was served, so NO WellKnown or SecurityTxt pointer is emitted in apis.yml.
+  A recorded absence is valid data, not a presence.
+hosts:
+- host: 4rsystems.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: www.4rsystems.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: portal.4rsystems.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: login.4rsystems.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+notes:
+- 'portal.4rsystems.com returns HTTP 200 with a Microsoft identity sign-in shell ("We
+  can''t sign you in / your browser is currently set to block cookies") — it is the
+  gated customer application, not a developer surface.'
+- 'login.4rsystems.com returns HTTP 403 at the root and a branded 404 on every
+  /.well-known/ path; it publishes no OpenID Connect discovery document anonymously.'
+- 'No agent card was found on any host, so per the pipeline contract nothing was
+  written to a2a/ — an agent card is search-only and is never authored on a
+  provider''s behalf.'
